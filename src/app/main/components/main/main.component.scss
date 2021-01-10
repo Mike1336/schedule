@@ -1,0 +1,18 @@
+$header-height: 58px;
+
+header {
+  position: fixed;
+  z-index: 1;
+  height: $header-height;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+main {
+  position: relative;
+  min-height: 400px;
+  margin-top: $header-height;
+  padding-top: 10px;
+  transition: .3s;
+}

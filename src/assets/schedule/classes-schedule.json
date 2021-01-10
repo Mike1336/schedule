@@ -1,0 +1,40 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "number": "1",
+      "start_time": "08:00",
+      "finish_time": "09:30"
+    },
+    {
+      "id": "2",
+      "number": "2",
+      "start_time": "09:40",
+      "finish_time": "11:10"
+    },
+    {
+      "id": "3",
+      "number": "3",
+      "start_time": "11:30",
+      "finish_time": "13:00"
+    },
+    {
+      "id": "4",
+      "number": "4",
+      "start_time": "13:10",
+      "finish_time": "14:40"
+    },
+    {
+      "id": "5",
+      "number": "5",
+      "start_time": "15:00",
+      "finish_time": "16:30"
+    },
+    {
+      "id": "6",
+      "number": "6",
+      "start_time": "16:40",
+      "finish_time": "18:10"
+    }
+  ]
+}

@@ -1,2 +1,5 @@
-<p>schedule-table works!</p>
+<div class="selectorsGroup">
+  <p-cascadeSelect [ngModel]="filterBy" (ngModelChange)="setFilter($event)" [options]="countries" optionLabel="cname" optionGroupLabel="name"
+    [optionGroupChildren]="['states', 'cities']" [style]="{'minWidth': '14rem'}" placeholder="Select a City"></p-cascadeSelect>
+</div>
 <router-outlet></router-outlet>

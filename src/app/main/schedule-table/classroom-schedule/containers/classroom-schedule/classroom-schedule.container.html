@@ -1,0 +1,6 @@
+<div class="spinner" [ngClass]="{'show': loading}">
+  <p-progressSpinner></p-progressSpinner>
+</div>
+<ng-container *ngIf="!loading">
+  <classroom-schedule [schedule]="schedule" [classes]="classes"></classroom-schedule>
+</ng-container>

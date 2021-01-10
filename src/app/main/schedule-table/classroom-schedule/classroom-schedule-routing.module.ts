@@ -1,17 +1,22 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { ClassroomScheduleComponent } from './classroom-schedule.component';
+import { ClassroomScheduleContainer } from './containers/classroom-schedule/classroom-schedule.container';
 
 const routes: Routes = [
   {
     path: '',
-    component: ClassroomScheduleComponent,
-  }
+    pathMatch: 'full',
+    redirectTo: '1',
+  },
+  {
+    path: ':room',
+    component: ClassroomScheduleContainer,
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
 export class ClassroomScheduleRoutingModule { }
