@@ -1,13 +1,15 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { ScheduleTableComponent } from './schedule-table.component';
-
 const routes: Routes = [
   {
+    path: 'classroom',
+    loadChildren: () => import('./classroom-schedule/classroom-schedule.module').then(m => m.ClassroomScheduleModule),
+  },
+  {
     path: '',
-    component: ScheduleTableComponent,
-  }
+    loadChildren: () => import('./common-schedule/common-schedule.module').then(m => m.CommonScheduleModule),
+  },
 ];
 
 @NgModule({

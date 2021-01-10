@@ -9,13 +9,12 @@ const routes: Routes = [
     component: MainComponent,
     children: [
       {
-        path: '',
-        pathMatch: 'full',
-        loadChildren: () => import('./schedule-table/schedule-table.module').then(m => m.ScheduleTableModule),
-      },
-      {
         path: 'profile',
         loadChildren: () => import('./profile/profile.module').then(m => m.ProfileModule),
+      },
+      {
+        path: '',
+        loadChildren: () => import('./schedule-table/schedule-table.module').then(m => m.ScheduleTableModule),
       },
     ],
   },
